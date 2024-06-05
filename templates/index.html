@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kody's Kupcakes</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('home') }}" class="header-link">
+            <h1>Kody's Kupcakes</h1>
+        </a>
+        <a href="{{ url_for('show_orders') }}">
+            <button class="btn btn-primary">View Active Orders</button>
+        </a>
+    </header>
+
+    {% block main %}
+        <p>This is my index</p>
+
+        {% for cupcake in cupcakes %}
+        <div class="cupcake-container">
+            <a href="{{ url_for('individual_cupcake', name=cupcake['name']) }}">
+                <h3>{{ cupcake["name"] }}</h3>
+            </a>
+            <div class="flavor-frosting">
+                <h5>Flavor: {{ cupcake["flavor"] }}</h5>
+                <h5>Frosting: {{ cupcake["frosting"] }}</h5>
+            </div>
+            <h4>Price: ${{ cupcake["price"] }}</h4>
+            <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+                <button class="btn btn-primary btn-xs">Add to Cart</button>
+            </a>
+        </div>
+        {% endfor %}
+    {% endblock %}
+</body>
+</html>

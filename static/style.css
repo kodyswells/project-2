@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-link {
+    text-decoration: none;
+    color: white;
+}
+
+.cupcake-details, .cupcake-summary, .order-details {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cupcake-details h2, .cupcake-summary h4, .order-details h3 {
+    margin-top: 0;
+}
+
+.cupcake-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cupcake-details ul li {
+    color: rgb(0, 0, 0);
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+.cupcake-list, .orders-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cupcake-summary, .order-details {
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.orders-container {
+    margin-top: 40px;
+}
+
+.order-details {
+    padding: 15px;
+    border: 2px solid #ff69b4;
+}
+
+.order-details h3 {
+    color: #ff69b4;
+}

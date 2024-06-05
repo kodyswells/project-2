@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block main %}
+    <div class="cupcake-details">
+        <h2>{{ cupcake["name"] }}</h2>
+        <h4>Flavor: {{ cupcake["flavor"] }}</h4>
+        <h4>Frosting: {{ cupcake["frosting"] }}</h4>
+        {% if cupcake["filling"] %}
+            <h4>Filling: {{ cupcake["filling"] }}</h4>
+        {% endif %}
+        <h4>Sprinkles:</h4>
+        <ul>
+            {% for sprinkle in cupcake["sprinkles"] %}
+                <li>{{ sprinkle }}</li>
+            {% endfor %}
+        </ul>
+        <h4><b>Price: ${{ cupcake["price"] }}</b></h4>
+        <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+            <button class="btn btn-primary btn-xs">Add to Cart</button>
+        </a>
+    </div>
+
+
+{% endblock %}

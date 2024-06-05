@@ -1,0 +1,8 @@
+size,name,price,flavor,frosting,sprinkles,filling
+mini,Chocolate Delight,1.5,Chocolate,Chocolate Ganache,"['Chocolate Chips', 'Gold Dust']",
+mini,Vanilla Bean,1.5,Vanilla,Vanilla Buttercream,['White Pearls'],
+large,Red Velvet Surprise,3.0,Red Velvet,Cream Cheese,"['Red Sugar', 'Edible Glitter']",Cream Cheese Frosting
+large,Lemon Meringue,3.0,Lemon,Lemon Curd,['Lemon Zest'],Meringue
+regular,Caramel Crunch,2.5,Caramel,Caramel Sauce,['Toffee Bits'],Caramel Buttercream
+regular,Cookies and Cream,2.5,Chocolate,Cookies and Cream,['Crushed Oreos'],Cookies and Cream Buttercream
+regular,Strawberry Shortcake,2.5,Strawberry,Strawberry Jam,"['Strawberry Slices', 'Pink Sugar']",Whipped Cream
